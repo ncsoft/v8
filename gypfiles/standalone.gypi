@@ -769,7 +769,7 @@
       'target_defaults': {
         'cflags': [
           '-Wall',
-          '<(werror)',
+          #'<(werror)',
           '-Wno-unused-parameter',
           '-pthread',
           '-pedantic',
