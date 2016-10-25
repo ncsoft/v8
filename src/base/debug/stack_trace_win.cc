@@ -45,7 +45,7 @@ long WINAPI StackDumpExceptionFilter(EXCEPTION_POINTERS* info) {  // NOLINT
 void GetExePath(wchar_t* path_out) {
   GetModuleFileName(NULL, path_out, MAX_PATH);
   path_out[MAX_PATH - 1] = L'\0';
-  PathRemoveFileSpec(path_out);
+  //PathRemoveFileSpec(path_out);
 }
 
 bool InitializeSymbols() {

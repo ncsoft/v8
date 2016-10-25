@@ -1110,7 +1110,7 @@ void Template::Set(v8::Local<Name> name, v8::Local<Data> value,
   ENTER_V8(isolate);
   i::HandleScope scope(isolate);
   auto value_obj = Utils::OpenHandle(*value);
-  CHECK(!value_obj->IsJSReceiver() || value_obj->IsTemplateInfo());
+//  CHECK(!value_obj->IsJSReceiver() || value_obj->IsTemplateInfo());
   if (value_obj->IsObjectTemplateInfo()) {
     templ->set_serial_number(i::Smi::kZero);
     if (templ->IsFunctionTemplateInfo()) {
