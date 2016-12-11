@@ -134,6 +134,10 @@ ifeq ($(i18nsupport), off)
   GYPFLAGS += -Dv8_enable_i18n_support=0
   TESTFLAGS += --noi18n
 endif
+# inspector=off
+ifeq ($(inspector), on)
+  GYPFLAGS += -Dv8_enable_inspector=1
+endif
 # deprecationwarnings=on
 ifeq ($(deprecationwarnings), on)
   GYPFLAGS += -Dv8_deprecation_warnings=1
