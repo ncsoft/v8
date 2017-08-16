@@ -33,4 +33,5 @@ Chrome V8
 https://developers.google.com/v8 
 Copyright 2015 Google
 Apache 2.0 License, Creative Commons Attribution 3.0 License (Dual License)
-License texts can be found at http://www.apache.org/licenses/LICENSE-2.0 and https://creativecommons.org/licenses/by/3.0/legalcode
+License texts can be found at http://www.apache.org/licenses/LICENSE-2.0 and 
+https://creativecommons.org/licenses/by/3.0/legalcode
