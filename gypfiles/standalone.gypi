@@ -863,6 +863,7 @@
           #                    declared.
           # This happens in a number of Windows headers. Dumb.
           4091,
+          4003,
           4267,
           4819,
           # C4127: conditional expression is constant
