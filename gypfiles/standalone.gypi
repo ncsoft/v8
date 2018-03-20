@@ -869,7 +869,9 @@
           #                    declared.
           # This happens in a number of Windows headers. Dumb.
           4091,
-
+          4003,
+          4267,
+          4819,
           # C4127: conditional expression is constant
           # This warning can in theory catch dead code and other problems, but
           # triggers in far too many desirable cases where the conditional
