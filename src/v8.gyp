@@ -541,6 +541,7 @@
       ],
       'sources': [  ### gcmole(all) ###
         '<@(inspector_all_sources)',
+        '../include/interface-types.h',
         '../include/v8-debug.h',
         '../include/v8-platform.h',
         '../include/v8-profiler.h',
