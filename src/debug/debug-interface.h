@@ -204,9 +204,6 @@ enum Builtin { kStringToLowerCase };
 
 Local<Function> GetBuiltin(Isolate* isolate, Builtin builtin);
 
-V8_EXPORT_PRIVATE void SetConsoleDelegate(Isolate* isolate,
-                                          ConsoleDelegate* delegate);
-
 int GetStackFrameId(v8::Local<v8::StackFrame> frame);
 
 v8::Local<v8::StackTrace> GetDetailedStackTrace(Isolate* isolate,

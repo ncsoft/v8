@@ -38,6 +38,7 @@ class V8_EXPORT_PRIVATE Malloced {
 
 template <typename T>
 T* NewArray(size_t size) {
+  if (size == 0) return nullptr;
   T* result = new (std::nothrow) T[size];
   if (result == nullptr) {
     V8::GetCurrentPlatform()->OnCriticalMemoryPressure();
