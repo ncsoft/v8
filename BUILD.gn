@@ -1965,6 +1965,7 @@ v8_source_set("v8_base_without_compiler") {
 
     ### gcmole(all) ###
     "$target_gen_dir/builtins-generated/bytecodes-builtins-list.h",
+    "include/interface-types.h",
     "include/v8-inspector-protocol.h",
     "include/v8-inspector.h",
     "include/v8-internal.h",
