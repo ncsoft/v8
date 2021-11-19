@@ -1209,9 +1209,9 @@ void Template::Set(v8::Local<Name> name, v8::Local<Data> value,
   i::HandleScope scope(isolate);
   auto value_obj = Utils::OpenHandle(*value);
 
-  Utils::ApiCheck(!value_obj->IsJSReceiver() || value_obj->IsTemplateInfo(),
-                  "v8::Template::Set",
-                  "Invalid value, must be a primitive or a Template");
+  // Utils::ApiCheck(!value_obj->IsJSReceiver() || value_obj->IsTemplateInfo(),
+  //                 "v8::Template::Set",
+  //                 "Invalid value, must be a primitive or a Template");
 
   // The template cache only performs shallow clones, if we set an
   // ObjectTemplate as a property value then we can not cache the receiver
