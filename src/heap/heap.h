@@ -1737,6 +1737,9 @@ class Heap {
     bool operator==(const GCCallbackTuple& other) const;
     GCCallbackTuple& operator=(const GCCallbackTuple& other) V8_NOEXCEPT;
 
+    // Explicitly define a default copy constructor to avoid -Wdeprecated-copy error.
+    GCCallbackTuple(const GCCallbackTuple& other) V8_NOEXCEPT = default;
+
     v8::Isolate::GCCallbackWithData callback;
     GCType gc_type;
     void* data;
